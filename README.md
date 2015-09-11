@@ -1,4 +1,4 @@
-# Twitter for Node.js
+# WSF for Node.js
 
 An asynchronous client library for WSDOT Washington State Ferries (WSF) [Fares](http://www.wsdot.wa.gov/ferries/api/fares/documentation/), [Schedule](http://www.wsdot.wa.gov/ferries/api/schedule/documentation/),
 [Terminals](http://www.wsdot.wa.gov/ferries/api/terminals/documentation/), and [Vessels](http://www.wsdot.wa.gov/ferries/api/schedule/documentation/) REST API's.
@@ -70,7 +70,7 @@ client.vessels.vessellocations(function(error, vessels, response){
 });
 ```
 
-How about an example that passes parameters?  Let's  [tweet something](https://dev.twitter.com/rest/reference/post/statuses/update):
+How about an example that passes parameters?  Let's  [grab some terminal combos](http://www.wsdot.wa.gov/ferries/api/fares/documentation/rest.html#tabterminalcombo):
 
 ```javascript
 // Access Fares API  -- get /terminalcombo/{TripDate}/{DepartingTerminalID}/{ArrivingTerminalID}
