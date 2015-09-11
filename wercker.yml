@@ -1,8 +1,8 @@
 box: nodesource/trusty
 build:
   steps:
+    - wercker/jshint@2.0.0
     - npm-install
-    - npm-install jshint -g
     - npm-test
     - script:
         name: echo nodejs information
