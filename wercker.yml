@@ -1,8 +1,9 @@
 box: nodesource/trusty
 build:
   steps:
-    - jshint:
-            version: 2.4.0
+    - script:
+        name: install jshint
+        code: npm install jshint
     - npm-install
     - npm-test
     - script:
