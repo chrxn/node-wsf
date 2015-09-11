@@ -54,6 +54,16 @@ The dates are sent from WSDOT in this format: ``'/Date(1441946334000-0700)/'`` .
 
 You now have the ability to make GET requests against the API via the convenience methods.
 
+Requests can be made in this way: `client[service][endpoint](params, callback)` where
+
+* `service` is one of `['fares','schedule','terminals','vessels']`
+* `endpoint` is a valid endpoint listed on the [Fares](http://www.wsdot.wa.gov/ferries/api/fares/documentation/), [Schedule](http://www.wsdot.wa.gov/ferries/api/schedule/documentation/),
+[Terminals](http://www.wsdot.wa.gov/ferries/api/terminals/documentation/), or [Vessels](http://www.wsdot.wa.gov/ferries/api/schedule/documentation/) REST API Documentation pages
+* params is optional and can be omitted, or  `(typeof params === 'number' || typeof params === 'string' || typeof params.join === 'function') => true`
+* the callback signature is `function(error, data, response)` - `data` is parsed JSON, and `response` is the raw response
+
+You can see an example of how this is used below.
+
 
 ## REST API
 
