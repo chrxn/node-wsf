@@ -2,8 +2,8 @@ box: nodesource/trusty
 build:
   steps:
     - script:
-        name: install jshint and mocha
-        code: npm install jshint mocha
+        name: install npm dev dependencies
+        code: npm install --dev
     - npm-install
     - npm-test
     - script:
