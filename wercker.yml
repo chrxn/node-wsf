@@ -1,7 +1,8 @@
 box: nodesource/trusty
 build:
   steps:
-    - wercker/jshint@2.0.0
+    - jshint:
+            version: 2.4.0
     - npm-install
     - npm-test
     - script:
