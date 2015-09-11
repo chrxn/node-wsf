@@ -1,0 +1,50 @@
+{
+  "name": "wsf",
+  "version": "v1.0.0",
+  "description": "WSDOT Washington State Ferries (WSF) API client library for node.js",
+  "keywords": [
+    "washington",
+    "ferries",
+    "wsdot",
+    "api",
+    "wsf",
+    "washington state ferries"
+  ],
+  "homepage": "https://github.com/chrxn/wsf",
+  "author": "Christian Stark <chrxin@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrxn/node-wsf"
+  },
+  "scripts": {
+    "test": "npm run lint && mocha",
+    "lint": "jshint test/*.js lib/*.js && echo Lint passed."
+  },
+  "dependencies": {
+    "deep-extend": "^0.3.2",
+    "request": "^2.51.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.6.0",
+    "mocha": "^2.1.0",
+    "nock": "^0.57.0"
+  },
+  "main": "./lib/wsf",
+  "jshintConfig": {
+    "boss": true,
+    "node": true,
+    "strict": true,
+    "newcap": false,
+    "undef": true,
+    "unused": true,
+    "onecase": true,
+    "lastsemic": true,
+    "indent": 2,
+    "globals": {
+      "escape": true,
+      "describe": true,
+      "it": true,
+      "before": true
+    }
+  }
+}
