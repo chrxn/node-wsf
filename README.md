@@ -1,5 +1,7 @@
 # WSF for Node.js
 
+[![wercker status](https://app.wercker.com/status/6259d94be04dcfce826c3602be600fb1/m "wercker status")](https://app.wercker.com/project/bykey/6259d94be04dcfce826c3602be600fb1)
+
 An asynchronous client library for WSDOT Washington State Ferries (WSF) [Fares](http://www.wsdot.wa.gov/ferries/api/fares/documentation/), [Schedule](http://www.wsdot.wa.gov/ferries/api/schedule/documentation/),
 [Terminals](http://www.wsdot.wa.gov/ferries/api/terminals/documentation/), and [Vessels](http://www.wsdot.wa.gov/ferries/api/schedule/documentation/) REST APIs.
 

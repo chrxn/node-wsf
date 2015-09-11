@@ -25,7 +25,7 @@
     "request": "^2.51.0"
   },
   "devDependencies": {
-    "jshint": "^2.6.0",
+    "jshint": "^2.8.0",
     "mocha": "^2.1.0",
     "nock": "^0.57.0"
   },
