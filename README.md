@@ -60,6 +60,7 @@ Requests can be made in this way: `client[service][endpoint](params, callback)` 
 * `endpoint` is a valid endpoint listed on the [Fares](http://www.wsdot.wa.gov/ferries/api/fares/documentation/), [Schedule](http://www.wsdot.wa.gov/ferries/api/schedule/documentation/),
 [Terminals](http://www.wsdot.wa.gov/ferries/api/terminals/documentation/), or [Vessels](http://www.wsdot.wa.gov/ferries/api/schedule/documentation/) REST API Documentation pages
 * params is optional and can be omitted, or  `(typeof params === 'number' || typeof params === 'string' || typeof params.join === 'function') => true`
+* for those requests requiring params to be an array, please note that the order of the elements must match the order described in the documentation.
 * the callback signature is `function(error, data, response)` - `data` is parsed JSON, and `response` is the raw response
 
 You can see an example of how this is used below.
