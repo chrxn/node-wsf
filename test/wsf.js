@@ -77,7 +77,7 @@ describe('Wsf', function() {
           options.request_options.headers.Accept);
       });
 
-      it('has pre-configured request object', function(next){
+      it('has pre-configured request object', function(){
         var client = new Wsf({
           request_options: {
             headers: {
@@ -85,6 +85,8 @@ describe('Wsf', function() {
             }
           }
         });
+
+
 
         assert(client.hasOwnProperty('request'));
 
@@ -97,8 +99,38 @@ describe('Wsf', function() {
           assert(headers.foo, 'bar');
 
           assert.equal(headers['User-Agent'], 'node-wsf/' + VERSION);
+        });
 
-          next();
+
+      });
+
+      it('has proper convenience method objects', function(){
+        var client = new Wsf({
+          request_options: {
+            headers: {
+              foo: 'bar'
+            }
+          }
+        });
+
+
+
+        assert(client.hasOwnProperty('fares'));
+        assert(client.hasOwnProperty('schedule'));
+        assert(client.hasOwnProperty('terminals'));
+        assert(client.hasOwnProperty('vessels'));
+
+
+        nock('http://node.wsf').get('/').reply(200);
+        client.vessels.vessellocations('http://node.wsf/', function(error, data, response){
+
+          var headers = response.request.headers;
+
+          assert(headers.hasOwnProperty('foo'));
+          assert(headers.foo, 'bar');
+
+          assert.equal(headers['User-Agent'], 'node-wsf/' + VERSION);
+
         });
 
 
