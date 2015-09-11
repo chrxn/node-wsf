@@ -16,6 +16,7 @@ describe('Wsf', function() {
       before(function(){
         defaults = {
           api_access_code: null,
+          fix_dates: true,
           rest: {
             base: 'http://www.wsdot.wa.gov/ferries/api',
             services: {
@@ -55,6 +56,7 @@ describe('Wsf', function() {
       it('accepts and overrides options', function(){
         var options = {
           api_access_code: 'XXXXX',
+          fix_dates: true,
           power: 'Max',
           request_options: {
             headers: {
@@ -94,7 +96,7 @@ describe('Wsf', function() {
           assert(headers.hasOwnProperty('foo'));
           assert(headers.foo, 'bar');
 
-          assert.equal(headers['User-Agent'], 'wsf/' + VERSION);
+          assert.equal(headers['User-Agent'], 'node-wsf/' + VERSION);
 
           next();
         });
@@ -110,7 +112,7 @@ describe('Wsf', function() {
       var code = 'XXXXXX';
       var apiaccesscode = '?apiaccesscode=' + code;
       before(function(){
-        client = new Wsf({api_access_code: apiaccesscode});
+        client = new Wsf({api_access_code: code});
       });
 
       it('method exists', function(){
