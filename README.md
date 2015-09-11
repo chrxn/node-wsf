@@ -47,7 +47,7 @@ client.vessels.vessellocations(20, function(error, vessel, response){
 
 You will need valid WSDOT developer credentials in the form of an API Access Code.  You can get these [here](http://www.wsdot.wa.gov/traffic/api/).  Submit your email address and retrieve your API Access Code.
 
-The dates are sent from WSDOT in this format: '/Date(1441946334000-0700)/' . You can pass `fix_dates: true` in the options object to indiscriminately find and replace them with the Unix Epoch equivalent. The replace operation will take place after every request if enabled.
+The dates are sent from WSDOT in this format: ``'/Date(1441946334000-0700)/'`` . You can pass `fix_dates: true` in the options object to indiscriminately find and replace them with the Unix Epoch equivalent. The replace operation will take place after every request if enabled.
 
 
 ## Requests
