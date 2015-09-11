@@ -143,6 +143,10 @@ describe('Wsf', function() {
           client.options.rest.base + client.options.rest.services.vessels + '/' + path + apiaccesscode
         );
 
+        assert.equal(
+          client.__buildEndpoint('terminalsandmatesbyroute','schedule', ['2015-9-11', 5]),
+          client.options.rest.base + client.options.rest.services.schedule + '/terminalsandmatesbyroute/' +  ['2015-9-11', 5].join('/') + apiaccesscode
+        );
 
 
         assert.equal(
