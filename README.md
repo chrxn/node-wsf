@@ -98,8 +98,10 @@ client.fares.terminalcombo(params, function(error, combo, response){
 
 ## Contributors
 Authored by [@chrxn](http://github.com/chrxn)
+
 Based on node-twitter, originally authored by  [@technoweenie](http://github.com/technoweenie)
  and maintained by [@jdub](http://github.com/jdub)
+ 
 node-twitter is currently maintained by [@desmondmorris](http://github.com/desmondmorris)
 
 ## LICENSE
