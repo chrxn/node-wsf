@@ -132,10 +132,6 @@ describe('Wsf', function() {
           client.options.rest.base + client.options.rest.services.vessels + '/' + path + apiaccesscode
         );
 
-        assert.equal(
-          client.__buildEndpoint(path + apiaccesscode, 'vessels'),
-          client.options.rest.base + client.options.rest.services.vessels + '/' + path + apiaccesscode
-        );
 
         assert.equal(
           client.__buildEndpoint('/' + path + apiaccesscode, 'vessels'),
