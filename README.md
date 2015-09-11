@@ -1,7 +1,7 @@
 # WSF for Node.js
 
 An asynchronous client library for WSDOT Washington State Ferries (WSF) [Fares](http://www.wsdot.wa.gov/ferries/api/fares/documentation/), [Schedule](http://www.wsdot.wa.gov/ferries/api/schedule/documentation/),
-[Terminals](http://www.wsdot.wa.gov/ferries/api/terminals/documentation/), and [Vessels](http://www.wsdot.wa.gov/ferries/api/schedule/documentation/) REST API's.
+[Terminals](http://www.wsdot.wa.gov/ferries/api/terminals/documentation/), and [Vessels](http://www.wsdot.wa.gov/ferries/api/schedule/documentation/) REST APIs.
 
 
 
@@ -101,7 +101,7 @@ Authored by [@chrxn](http://github.com/chrxn)
 
 Based on node-twitter, originally authored by  [@technoweenie](http://github.com/technoweenie)
  and maintained by [@jdub](http://github.com/jdub)
- 
+
 node-twitter is currently maintained by [@desmondmorris](http://github.com/desmondmorris)
 
 ## LICENSE
