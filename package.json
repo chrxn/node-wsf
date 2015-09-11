@@ -1,7 +1,7 @@
 {
   "name": "wsf",
-  "version": "v1.0.0",
-  "description": "WSDOT Washington State Ferries (WSF) API client library for node.js",
+  "version": "v1.0.1",
+  "description": "An asynchronous client library for WSDOT Washington State Ferries (WSF) Fares, Schedule, Terminals, and Vessels REST APIs.",
   "keywords": [
     "washington",
     "ferries",
@@ -10,7 +10,7 @@
     "wsf",
     "washington state ferries"
   ],
-  "homepage": "https://github.com/chrxn/wsf",
+  "homepage": "https://github.com/chrxn/node-wsf",
   "author": "Christian Stark <chrxin@gmail.com>",
   "repository": {
     "type": "git",
